@@ -16,12 +16,12 @@ public class TheGUI  extends JFrame implements ActionListener {
     
 
     public TheGUI() {
-        frame = new JFrame("Transportation Application On UG Campus");
+        frame = new JFrame("Route finder application");
         panel = new JPanel();
         button = new JButton("Start");
         button.setBounds(40, 30, 50, 2);
-        startLabel = new JLabel("Please choose your current location: ");
-        stopLabel = new JLabel("Please choose your destination: ");
+        startLabel = new JLabel("Choose current location from the list: ");
+        stopLabel = new JLabel("Choose destinatioin from the list: ");
         button.setBackground(Color.CYAN);
         button.setForeground(Color.RED);
         Font labelFont = new Font("Arial", Font.BOLD, 26);
@@ -33,7 +33,7 @@ public class TheGUI  extends JFrame implements ActionListener {
         
 
 
-        String[] locations = {"Select a location", "CS Department", "Math Department", "Engineering School", "Chemistry Department", "Law Faculty", "JQB", "Main Gate", "School of Performing Arts", "Balme Library", "UGCS" , "Business School", "Volta Hall", "Commonwealth", "Great Hall", "Akuafo Hall", "Legon Hall", "Bush Canteen", "Sarbah Park", "Fire Station", "Banking Square", "Night Market", " Basic School", "Diaspora Halls"};
+        String[] locations = {"Choose your location", "CS Department", "Math Department", "Engineering School", "Chemistry Department", "Law Faculty", "JQB", "Main Gate", "School of Performing Arts", "Balme Library", "UGCS" , "Business School", "Volta Hall", "Commonwealth", "Great Hall", "Akuafo Hall", "Legon Hall", "Bush Canteen", "Sarbah Park", "Fire Station", "Banking Square", "Night Market", " Basic School", "Diaspora Halls"};
         comboBox1 = new JComboBox<>(locations);
 
         comboBox1.addActionListener( new ActionListener() {
